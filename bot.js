@@ -1,12 +1,20 @@
 function answerQuery(query) {
   query = query.toLowerCase();
-  if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
+  if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1){
     return "I do not care too much about weather, I'm locked inside a data center.";
+
+  }
+
+  if (query.indexOf("football") != -1 || query.indexOf("league") != -1 || query.indexOf("club") != -1){
+    return "Manchester united is the only footbal club you neeed to know about.";
+  }
+
 
   
  if (query.indexOf("tea") != -1 || query.indexOf("biscuit") != -1 || query.indexOf("cookie") != -1)
 	return "I see you like tea or biscuits! So do I";
   
+
   return "Sorry Dave, I cannot do that."
   
   }
